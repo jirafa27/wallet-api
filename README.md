@@ -33,7 +33,7 @@ POSTGRES_DB=wallets_db
 POSTGRES_USER=user
 POSTGRES_PASSWORD=password
 DATABASE_URL=postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@postgres:5432/${POSTGRES_DB}
-TEST_BASE_URL="http://app:5000/api/v1/wallets"
+TEST_BASE_URL=http://app:5000/api/v1/wallets
 ```
 
 ### Сборка и запуск контейнеров
@@ -72,7 +72,7 @@ docker-compose run --rm app pytest -vv
   "status": "success",
   "message": "Wallet created successfully",
   "wallet": {
-    "UID": "d0a1e9d6-45b8-4c69-a17a-9384765e748a",
+    "UID": "d0a1e9d6er",
     "amount": 0.0
   }
 }
