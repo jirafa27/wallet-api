@@ -153,7 +153,11 @@ docker-compose run --rm app pytest -vv
 
 ```sh
 {
-  "status": "success",
-  "message": "Wallet deleted successfully"
+    "message": "Wallet deleted successfully",
+    "status": "success",
+    "wallet": {
+        "UID": "TTgdcZ835r",
+        "amount": 100.0
+    }
 }
 ```

@@ -127,10 +127,7 @@ def delete_wallet():
             {
                 "status": "success",
                 "message": "Wallet deleted successfully",
-                "wallet": {
-                    "UID": wallet.UID,
-                    "amount": wallet.amount,
-                },
+                "wallet": wallet.to_dict()
             }
         ),
         200,
